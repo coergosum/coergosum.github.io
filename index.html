@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
 	<!-- Подключаем файл стилей из папки css -->
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<title>Document</title>
@@ -30,15 +31,15 @@
 	 	<div class="container">
 	 		<div class="row">
 	 			<div class="col-lg-7">
-	 				<img class="header-img" src="img/main-img.png" alt="">
+	 				<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="">
 	 			</div>
 	 			<div class="col-lg-5">
-	 				<p class="header_pretitle">Веб-разработчик</p>
-	 				<h1 class="header_title">Виктор Лысов</h1>
-	 				<p  class="header_subtitle">Верстка на HTML/CSS
+	 				<p class="header_pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+	 				<h1 class="header_title wow fadeInRightBig" data-wow-delay="0.1s">Виктор Лысов</h1>
+	 				<p  class="header_subtitle wow fadeInRightBig" data-wow-delay="0.1s">Верстка на HTML/CSS
 	 					<br>
 	 				Разработка сайтов под ключ</p>
-	 				<div class="header_button_block">
+	 				<div class="header_button_block wow fadeInRightBig" data-wow-delay="0.1s">
 	 					<a href="https://t.me/viktorlysov"class="header_button">Связаться
 	 					</a>
 	 				</div>
@@ -51,7 +52,7 @@
 
 	<section class="portfolio">
 		<div class="container">
-		<div class="portfolio_block">
+		<div class="portfolio_block wow fadeInUpBig">
 			<h2 class="portfolio_title">Портфолио</h2>
 			<p class="portfolio_subtitle">Мои работы</p>
 			<div class="row">
@@ -89,7 +90,7 @@
 					
 				</div>
 				<div class="col-md-4">
-					<div class="social_block">
+					<div class="social_block wow fadeIn">
 						<p>Я в соцсетях:</p>
 						<a href="https://www.facebook.com/profile.php?id=100016810142794"><img src="img/socials/facebook-logo-button.png" alt="Facebook"></a>
 						<a href="https://vk.com/lysov_vd"><img src="img/socials/vk-logo-button.png" alt="ВКонтакте"></a>
@@ -110,5 +111,9 @@
 
 		
 	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
